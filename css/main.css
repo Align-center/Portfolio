@@ -1,0 +1,428 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 1.6rem;
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    color: #333;
+    transition: all ease-in-out .3s;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Josefin Sans';
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h4 {
+    font-size: 2.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container {
+    max-width: 100rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.dark {
+    background-color: #333;
+}
+
+.light {
+    color: rgb(245, 245, 245);
+}
+
+.logo-light {
+    fill: rgb(245, 245, 245);
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*
+$$\   $$\                           $$\                     
+$$ |  $$ |                          $$ |                    
+$$ |  $$ | $$$$$$\   $$$$$$\   $$$$$$$ | $$$$$$\   $$$$$$\  
+$$$$$$$$ |$$  __$$\  \____$$\ $$  __$$ |$$  __$$\ $$  __$$\ 
+$$  __$$ |$$$$$$$$ | $$$$$$$ |$$ /  $$ |$$$$$$$$ |$$ |  \__|
+$$ |  $$ |$$   ____|$$  __$$ |$$ |  $$ |$$   ____|$$ |      
+$$ |  $$ |\$$$$$$$\ \$$$$$$$ |\$$$$$$$ |\$$$$$$$\ $$ |      
+\__|  \__| \_______| \_______| \_______| \_______|\__|      */
+           
+header {
+    transition: all ease-in-out .3s;
+}
+
+header div{
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}                  
+
+#logo {
+    width: 20%;
+    margin-top: 2rem;
+    transition: all ease-in-out 1s;
+}
+
+header h1 {
+    color: rgb(245, 245, 245);
+    margin: 0 auto 5rem;
+    line-height: 1.4;
+    mix-blend-mode: difference;
+    transition: all ease-in-out .3s;
+}
+
+header h1 span {
+    display: block;
+}
+
+header nav {
+    position: absolute;
+    left: 50%;
+    bottom: 5.5rem;
+    transition: all ease-in-out .3s;
+}
+
+header nav a {
+    position: relative;
+    left: -50%;
+    color: rgb(245, 245, 245);
+    margin: 0 1.5rem;
+    transition: all ease .3s;
+}
+
+header nav a:hover {
+    opacity: 0.7;
+}
+
+header button.material-icons {
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    font-size: 3.5rem;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+#up {
+    color: #F5F5F5;
+}
+
+header button.material-icons:active {
+    transform: scale(1.2);
+}
+
+header button.material-icons:hover {
+    opacity: .7;
+}
+                                                           
+/*
+$$\      $$\           $$\           
+$$$\    $$$ |          \__|          
+$$$$\  $$$$ | $$$$$$\  $$\ $$$$$$$\  
+$$\$$\$$ $$ | \____$$\ $$ |$$  __$$\ 
+$$ \$$$  $$ | $$$$$$$ |$$ |$$ |  $$ |
+$$ |\$  /$$ |$$  __$$ |$$ |$$ |  $$ |
+$$ | \_/ $$ |\$$$$$$$ |$$ |$$ |  $$ |
+\__|     \__| \_______|\__|\__|  \__|*/
+           
+#presentation, #skills, #projects {
+    margin: 2rem auto;
+}
+
+#presentation {
+    margin-bottom: 3.5rem;
+}
+
+#presentation > article {
+    max-width: 50%;
+}
+
+#presentation article p, #presentation article h4 {
+    color: rgb(245, 245, 245);
+    mix-blend-mode: difference;
+}
+
+#presentation article:last-child {
+    align-items: center;
+    justify-content: center;
+}
+
+#presentation article:last-child img {
+    width: 25%;
+    margin: 0 2.5rem;
+    transition: cubic-bezier(.44,-1.01,.59,1.9) .3s;
+    border-radius: 50%;
+}
+
+#presentation article:last-child img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 30px .5px rgba(98, 98, 98, 0.45);
+}
+
+#presentation h4 {
+    margin: 0;
+}
+
+#skills {
+    background:linear-gradient(180deg, rgba(255,255,255,0.40098037506018036) 0%, rgba(191,191,191,0.41498597730107667) 100%), url(../img/bg_skills.jpg);
+    background-size: cover;
+    transform: skewY(-5deg);
+    padding: 6.5rem 0;
+}
+
+#skills > div {
+    width: 100%;
+    justify-content: space-around;
+    transform: skewY(5deg);
+}
+
+#skills article {
+    flex: 0 1 20rem;
+    margin: 1rem;
+	flex-flow: column wrap;
+	text-align: center;
+	width: 20%;
+    border-radius: 1rem;
+    background: rgb(245, 245, 245);
+    transition: ease-in-out .3s;
+    padding-top: 2rem;
+}
+
+#skills:hover article {
+    opacity: .6;
+}
+
+#skills article:hover {
+    opacity: 1;
+}
+
+#skills span.material-icons {
+    font-size: 4.5rem;
+}
+
+#skills h4 {
+    margin: 1.5rem 0 0;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    margin:  .75rem 0;
+    color: #555;
+}
+
+#projects {
+    margin-top: 7.5rem;
+    justify-content: space-around;
+}
+
+#projects article {
+    position: relative;
+    flex: 0 1 25rem;
+    margin: 1rem;
+    background: #E8E8E8;
+    border-radius: 2rem 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#projects article h3 {
+    text-align: right;
+    height: 8.5rem;
+	margin: 0;
+	color: #333;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+#projects article ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#projects article ul li {
+	text-align: center;
+	padding: 1rem 0;
+}
+
+#projects article ul hr {
+	width: 60%;
+	border: .5px solid #d2d2d2;
+}
+
+#projects article a {
+	margin: 1rem auto;
+	display: block;
+	width: -moz-fit-content;
+	padding: 0.5rem 1rem;
+    border-radius: 0 0.7rem;
+    /* background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+    color: #333;
+    transition: all ease-in-out .3s;
+}
+
+#projects article a:hover {
+    transform: scale(1.1);
+}
+/*                                      
+$$$$$$$$\                   $$\                         
+$$  _____|                  $$ |                        
+$$ |    $$$$$$\   $$$$$$\ $$$$$$\    $$$$$$\   $$$$$$\  
+$$$$$\ $$  __$$\ $$  __$$\\_$$  _|  $$  __$$\ $$  __$$\ 
+$$  __|$$ /  $$ |$$ /  $$ | $$ |    $$$$$$$$ |$$ |  \__|
+$$ |   $$ |  $$ |$$ |  $$ | $$ |$$\ $$   ____|$$ |      
+$$ |   \$$$$$$  |\$$$$$$  | \$$$$  |\$$$$$$$\ $$ |      
+\__|    \______/  \______/   \____/  \_______|\__|     */ 
+
+footer {
+    clip-path: polygon(0 50%, 100% 0%, 100% 100%, 0% 100%);
+    padding: 7.5rem 0 2rem;
+    background: linear-gradient(180deg, rgba(34,193,195,.3) 0%, rgba(140,120,223,.3) 63%, rgba(198,45,253,.3) 100%);
+}
+
+footer > article {
+    margin: 2rem auto 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer article svg {
+    width: 10%;
+}
+
+footer > article a {
+    position: relative;
+}
+
+footer nav {
+    width: 24rem;
+    justify-content: center;
+}
+
+footer > article nav a:first-of-type {
+    margin: 0 1.5rem 0 0;
+}
+
+footer > article nav a:last-of-type {
+    margin: 0 0 0 1.5rem;
+}
+
+footer > article nav a{
+    margin: 0 1.5rem;
+}
+
+#contact {
+    margin: .7rem 0 0;
+}
+
+footer > article a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	height: .1rem;
+	width: 100%;
+	background: #333;
+	border-radius: 1rem;
+    left: 0;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+footer > article a.light::after {
+    background: rgb(245, 245, 245);
+}
+
+footer > article a:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+}
+
+@media screen and (max-width: 1000px) {
+
+    #presentation, #projects {
+        padding: 0 3rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    #presentation article:last-child img {
+        width: 30%;
+    }
+
+    footer article svg {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    #logo {
+        width: 25%;
+    }
+
+    #presentation article:last-child img {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #presentation article:last-child img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    #presentation article:last-child img {
+        width: 50%;
+    }
+
+    footer article svg {
+        width: 20%;
+    }
+}
