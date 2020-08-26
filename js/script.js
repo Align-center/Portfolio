@@ -29,7 +29,7 @@ function loaded() {
     // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    FUNCTIONS    XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-    function onClickDisplayNav() {
+    function onClickNightMode() {
 
         upButton.classList.toggle('hidden');
         downButton.classList.toggle('hidden');
@@ -71,8 +71,8 @@ function loaded() {
     // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX      GLOBAL     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
     // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-    downButton.addEventListener('click', onClickDisplayNav);
-    upButton.addEventListener('click', onClickDisplayNav);
+    downButton.addEventListener('click', onClickNightMode);
+    upButton.addEventListener('click', onClickNightMode);
 
     var interval = setInterval(changeColor, 1000);
 
