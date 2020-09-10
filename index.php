@@ -58,7 +58,7 @@
                     <a target='_blank' href="https://github.com/Align-center">Github</a><!--
                     --><a target='_blank' href="https://www.linkedin.com/in/lucas-frech-b111b8116/">LinkedIn</a><!--
                     --><a href="https://www.malt.fr/profile/lucasfrech">Malt</a>
-                    <a target='_blank' href="mailto:#" id='contact'>contact@lucasfrech.fr</a>
+                    <a target='_blank' href="mailto:lucasfrech@hotmail.fr" id='contact'>lucasfrech@hotmail.fr</a>
                 </nav>
             </article>
         </footer>
